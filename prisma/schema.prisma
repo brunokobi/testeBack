@@ -1,0 +1,29 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model Fatura {
+  id                              Int    @id @default(autoincrement())
+  numero_cliente                  String
+  mes_referencia                  String
+  data_vencimento                 String
+  energia_eletrica_quantidade     String
+  energia_eletrica_preco_unitario String
+  energia_eletrica_valor          String
+  energia_injetada_quantidade     String
+  energia_injetada_preco_unitario String
+  energia_injetada_valor          String
+  energia_sICMS_quantidade        String
+  energia_sICMS_preco_unitario    String
+  energia_sICMS_valor             String
+  contrib_ilum_publica_municipal  String
+  valor_total                     String
+}
