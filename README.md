@@ -1,6 +1,4 @@
-# #128161; Projeto de Extração de Dados de Conta de Energia
-
-&#128161;
+# &#128161; Projeto de Extração de Dados de Conta de Energia &#128161;
 
 Este é um projeto de exemplo que demonstra como extrair dados de contas de energia em formato PDF e armazená-los em um banco de dados usando o ORM Prisma. Além disso, o projeto também possui rotas para exibir as faturas cadastradas, filtrar as faturas por critérios específicos e exibir um gráfico com o consumo e o valor por mês de referência.
 
@@ -43,15 +41,23 @@ Após a instalação, você pode iniciar o servidor executando o seguinte comand
 
 Isso iniciará o servidor em http://localhost:3333.
 
-## ✔️ Rotas disponíveis:
+## 🗺️ Rotas disponíveis:
 
-POST /fatura: Envia os dados da conta de energia para o banco de dados e verifica se a conta já foi cadastrada anteriormente. Caso já tenha sido cadastrada, a conta não será cadastrada novamente.
+### ✔️POST /fatura
 
-GET /fatura: Exibe a lista das faturas cadastradas no banco de dados. Possui filtros opcionais para consultar faturas específicas.
+Envia os dados da conta de energia para o banco de dados e verifica se a conta já foi cadastrada anteriormente. Caso já tenha sido cadastrada, a conta não será cadastrada novamente.
 
-DELETE /fatura/:id: Deleta uma fatura pelo seu ID.
+## ✔️GET /fatura
 
-GET /grafico: Exibe um gráfico com o consumo e o valor por mês de referência das faturas cadastradas.
+Exibe a lista das faturas cadastradas no banco de dados. Possui filtros opcionais para consultar faturas específicas.
+
+## ✔️DELETE /fatura/:id
+
+Deleta uma fatura pelo seu ID.
+
+## ✔️GET /grafico
+
+Exibe um gráfico com o consumo e o valor por mês de referência das faturas cadastradas.
 
 ### Contribuição
 
