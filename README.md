@@ -1,4 +1,6 @@
-# &#128161; Projeto de Extração de Dados de Conta de Energia &#128161;
+# &#128161; Teste Back-end &#128161;
+
+## &#128640; Sobre o projeto
 
 Este é um projeto de exemplo que demonstra como extrair dados de contas de energia em formato PDF e armazená-los em um banco de dados usando o ORM Prisma. Além disso, o projeto também possui rotas para exibir as faturas cadastradas, filtrar as faturas por critérios específicos e exibir um gráfico com o consumo e o valor por mês de referência.
 
